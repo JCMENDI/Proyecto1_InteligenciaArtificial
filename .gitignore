@@ -205,3 +205,17 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Proyecto
+vebv/
+.venv/
+*.pkl
+!modelo/modelo_entrenado.pkl
+dataset/*.csv
+!dataset/.gitkeep
+.vscode/
+.idea/
+*.log
+
+# Capturas grandes
+documentacion/capturas/*.mp4
