@@ -1,0 +1,94 @@
+/* Estilos personalizados para el sistema de tickets */
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4ecf7 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.card-header {
+    border-radius: 12px 12px 0 0 !important;
+    padding: 1rem 1.25rem;
+}
+
+#categoriaPredicha .badge {
+    font-size: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    letter-spacing: 1px;
+}
+
+.barra-probabilidad {
+    margin-bottom: 0.75rem;
+}
+
+.barra-probabilidad .label-categoria {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.25rem;
+    font-size: 0.85rem;
+}
+
+.barra-probabilidad .label-categoria .nombre {
+    font-weight: 500;
+}
+
+.barra-probabilidad .label-categoria .valor {
+    color: #6c757d;
+    font-family: 'Consolas', monospace;
+}
+
+.barra-probabilidad .progress {
+    height: 8px;
+    border-radius: 4px;
+}
+
+.barra-probabilidad.ganadora .label-categoria .nombre {
+    font-weight: 700;
+    color: #0d6efd;
+}
+
+.barra-probabilidad.ganadora .progress-bar {
+    background-color: #0d6efd !important;
+}
+
+#estadoResultado {
+    animation: fadeIn 0.4s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.ejemplo {
+    font-size: 0.8rem;
+    transition: all 0.15s;
+}
+
+.ejemplo:hover {
+    transform: translateY(-1px);
+}
+
+input[readonly] {
+    cursor: not-allowed;
+    font-family: 'Consolas', monospace;
+    font-size: 0.9rem;
+}
+
+#tokensDebug {
+    background: #f8f9fa;
+    padding: 0.5rem;
+    border-radius: 4px;
+    display: block;
+    word-break: break-all;
+}
